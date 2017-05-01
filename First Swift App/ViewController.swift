@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var coolLabel: UILabel!
     
     @IBOutlet weak var text1: UITextField!
@@ -20,23 +20,29 @@ class ViewController: UIViewController {
         
         print(text1.text!)
         print(text2.text!)
-    coolLabel.text = "The answer is \(Double(text1.text!)! + Double(text2.text!)!)"
-        
         print(Double(text1.text!)! + Double(text2.text!)!)
-
+        
+        let addition  = false
+        
+        if addition {
+            coolLabel.text = "The answer is \(Double(text1.text!)! + Double(text2.text!)!)"
+        } else {
+            coolLabel.text = "The answer is \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
+        
     }
 
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
