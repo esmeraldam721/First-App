@@ -20,7 +20,9 @@ class ViewController: UIViewController {
         
         print(text1.text!)
         print(text2.text!)
-    
+    coolLabel.text = "The answer is \(Double(text1.text!)! + Double(text2.text!)!)"
+        
+        print(Double(text1.text!)! + Double(text2.text!)!)
 
     }
 
